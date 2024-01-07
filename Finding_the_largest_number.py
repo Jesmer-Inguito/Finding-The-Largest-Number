@@ -12,6 +12,8 @@ if num_1 >= num_2 and num_1 >= num_3:
     largest = num_1
 
 #Check if num_2 is the biggest
+elif num_2 >= num_1 and num_2 >= num_3:
+    largest = num_2
 
 #If neither of the two is the biggest, num_3 is the biggest
 
