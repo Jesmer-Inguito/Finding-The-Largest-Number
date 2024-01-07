@@ -8,6 +8,8 @@ num_2 = int(input("Enter the second number: "))
 num_3 = int(input("Enter the third number: "))
 
 #Check if num_1 is the biggest
+if num_1 >= num_2 and num_1 >= num_3:
+    largest = num_1
 
 #Check if num_2 is the biggest
 
