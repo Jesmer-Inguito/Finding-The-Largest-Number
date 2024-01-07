@@ -16,5 +16,7 @@ elif num_2 >= num_1 and num_2 >= num_3:
     largest = num_2
 
 #If neither of the two is the biggest, num_3 is the biggest
+else:
+    largest = num_3
 
 #Display the biggest number
