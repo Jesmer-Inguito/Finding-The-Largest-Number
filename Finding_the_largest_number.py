@@ -1,6 +1,6 @@
 # Finding the largest out of the three numbers
 
-#psedocode
+#pseudocode
 
 #Ask user to input three different numbers
 
