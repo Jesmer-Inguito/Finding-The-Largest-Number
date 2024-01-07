@@ -1,4 +1,6 @@
 # Finding the largest out of the three numbers
+import time 
+import colorama
 
 #pseudocode
 
