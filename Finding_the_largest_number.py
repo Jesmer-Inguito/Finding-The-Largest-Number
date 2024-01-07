@@ -20,3 +20,4 @@ else:
     largest = num_3
 
 #Display the biggest number
+print("The largest number is:",largest)
