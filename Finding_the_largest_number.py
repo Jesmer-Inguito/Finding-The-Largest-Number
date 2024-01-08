@@ -1,11 +1,13 @@
 # Finding the largest out of the three numbers
 import time 
 import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 
 #pseudocode
 
 #Ask user to input three different numbers
-num_1 = int(input("Enter the first number: "))
+num_1 = int(input(Fore.MAGENTA + "Enter the first number: "))
 num_2 = int(input("Enter the second number: "))
 num_3 = int(input("Enter the third number: "))
 
