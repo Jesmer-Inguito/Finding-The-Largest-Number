@@ -34,29 +34,43 @@ def solve_problem():
     
     # Check if the user wants to find the largest number
     if user_input.strip() == "Find the largest number":
-        num_1 = int(input(Fore.MAGENTA + Style.BRIGHT + "Enter the first number: " + Fore.YELLOW + Style.BRIGHT))
-        time.sleep(0.5)
-        num_2 = int(input(Fore.MAGENTA + Style.BRIGHT + "Enter the second number: " + Fore.YELLOW + Style.BRIGHT))
-        time.sleep(0.5)
-        num_3 = int(input(Fore.MAGENTA + Style.BRIGHT + "Enter the third number: " + Fore.YELLOW + Style.BRIGHT))
-        
-        #Check is num_1 is the biggest
-        if num_1 >= num_2 and num_1 >= num_3:
-            largest = num_1
-        
-        #Check if num_2 is the biggest
-        elif num_2 >= num_1 and num_2 >= num_3:
-            largest = num_2
-
-        #If neither of the two is the biggest, num_3 is the biggest=
-        else:
-            largest = num_3
-
-        time.sleep(1)
-        largest_colored = f"{Fore.GREEN}{Style.BRIGHT}{largest}"
-        print(Fore.GREEN + Style.BRIGHT + "The largest number is",largest_colored)
-        
+         input_number()
+    
     else:
         print(Fore.CYAN + Style.BRIGHT + "Problem-solving capabilties limited to finding the largest number at the moment")
+
+def input_number():
+    num_1 = int(input(Fore.MAGENTA + Style.BRIGHT + "Enter the first number: " + Fore.YELLOW + Style.BRIGHT))
+    time.sleep(0.5)
+    num_2 = int(input(Fore.MAGENTA + Style.BRIGHT + "Enter the second number: " + Fore.YELLOW + Style.BRIGHT))
+    time.sleep(0.5)
+    num_3 = int(input(Fore.MAGENTA + Style.BRIGHT + "Enter the third number: " + Fore.YELLOW + Style.BRIGHT))
+        
+    #Check is num_1 is the biggest
+    if num_1 >= num_2 and num_1 >= num_3:
+            largest = num_1
+        
+    #Check if num_2 is the biggest
+    elif num_2 >= num_1 and num_2 >= num_3:
+        largest = num_2
+
+    #If neither of the two is the biggest, num_3 is the biggest=
+    else:
+        largest = num_3
+
+    time.sleep(1)
+    largest_colored = f"{Fore.GREEN}{Style.BRIGHT}{largest}"
+    print(Fore.GREEN + Style.BRIGHT + "The largest number is",largest_colored)
+
+    time.sleep(0.5)
+    another_problem = input(Fore.MAGENTA + Style.BRIGHT + "Do you want to solve another problem? (yes/no): " + Fore.YELLOW + Style.BRIGHT)
+    if another_problem.lower() == "yes":
+        time.sleep(0.5)
+        input_number()
+
+    else: 
+        time.sleep(0.5)
+        print(Fore.CYAN + Style.BRIGHT + "Returning to Main Menu.")
+        time.sleep(1)
 
 main()
